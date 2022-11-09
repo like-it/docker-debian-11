@@ -14,7 +14,7 @@ RUN chmod +x /usr/bin/init
 RUN chmod +x /usr/bin/start
 
 # composer
-RUN apt-get update && apt-get install composer
+RUN apt-get update && apt-get install composer -y
 RUN composer self-update
 
 # php extensions
