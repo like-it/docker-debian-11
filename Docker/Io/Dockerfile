@@ -50,13 +50,6 @@ RUN chmod 0644 /etc/cron.d/default-crontab
 RUN crontab /etc/cron.d/default-crontab
 RUN touch /var/log/cron.log
 
-RUN mkdir -p /Application/Data
-RUN chmod 777 /Application/Data
-RUN chown www-data:www-data /Application/Data
-RUN mkdir -p /Application/Host
-RUN chmod 777 /Application/Host
-RUN chown www-data:www-data /Application/Host
-
 # Execute start script
 RUN chmod +x /Application/start.sh
 RUN sh /Application/start.sh
