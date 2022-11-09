@@ -41,6 +41,6 @@ For the first time it will ask for an e-mail address: any valid email address.
 it is running on port 2222.  
 You can go to http://example.local:2222
 
-If it ain't working you might need to add example.local to your host file.
+If it ain't working you might need to add example.local to your host file with: `127.0.0.1 example.local`.
 
 Read more on https://docs.r3m.io 
