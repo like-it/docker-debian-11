@@ -1,4 +1,6 @@
 vendor
+Bin
 Data
 Public
 Log
+composer.lock
