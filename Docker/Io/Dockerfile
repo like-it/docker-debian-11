@@ -13,8 +13,9 @@ COPY ./Docker/Io/Packages/init/startup/boot /startup/boot
 RUN chmod +x /usr/bin/init
 RUN chmod +x /usr/bin/start
 
-# composer
-RUN apt-get update && apt-get install composer -y
+### Composer V2 with self auto update
+COPY ./Docker/Io/Packages/composer/composer.phar /usr/local/bin/composer
+RUN chmod +x /usr/local/bin/composer
 RUN composer self-update
 
 # php extensions
