@@ -19,7 +19,8 @@ RUN chmod +x /usr/local/bin/composer
 RUN composer self-update
 
 # php extensions
-RUN apt-get update & apt-get install php-gd php-zip php-xml php-mysqli php-pdo php-sockets php-opcache php-mbstring php-curl -y
+RUN apt-get update
+RUN apt-get install php-gd php-zip php-xml php-mysqli php-pdo php-sockets php-opcache php-mbstring php-curl -y
 RUN a2enmod rewrite
 
 # php-fpm for HTTP/2
