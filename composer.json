@@ -1,5 +1,5 @@
 {
     "require": {
-        "r3m-io/framework": "dev-root"
+        "r3m-io/framework": ">=0"
     }
 }
