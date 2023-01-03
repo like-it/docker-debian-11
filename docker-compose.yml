@@ -1,7 +1,7 @@
 version: '3.3'
 
 services:
-  work_and_travel_core:
+  debian_core:
     container_name: debian-core
     image: debian/core
     restart: always
